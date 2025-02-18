@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+}
+
+body,html {
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    font-size:150%;
+    font-weight: bold;
+    padding: 2%;
+    background-color: bisque;
+}
+
+.scroll {
+    position: fixed;
+    top: 2%;
+    white-space: nowrap;
+    color: rgb(0, 100, 214);
+    animation: scroll 10s linear infinite;
+    height: 2%;
+
+}
+
+@keyframes scroll {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.advertisement-img {
+    width: 100%;
+    height: 51%;
+    /* margin-left: 2%; */
+    border-radius: 5%;
+}
+
+.advertisement {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    width: 400px;
+    gap: 20px;
+    padding-top: 1%;
+}
+
+.bullet {
+    position: relative;
+    text-align: center;
+    top: -22%;
+    color: gray;
+}
+
+.select {
+    display: inline-block;
+    align-items: center;
+    font-size: 200%
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: -10%;
+    margin-left: 15%;
+    height: 10%;
+}
+
+.trimming {
+    height: 40%;
+    width: 70%;
+    background-color: pink;
+}
+
+.trimming-model {
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.trimming-text {
+    text-align: center;
+}
+
+.training{
+    height: 40%;
+    width: 70%;
+    background-color: pink;
+}
+
+.training-model {
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.training-text {
+    text-align: center;
+}
+
+.hospital {
+    margin-top: -32%;
+    height: 90%;
+    width: 70%;
+    background-color: pink;
+}
+
+.hospital-model {
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.hospital-text {
+    text-align: center;
+}
+
+.petshop{
+    margin-top: -32%;
+    height: 90%;
+    width: 70%;
+    background-color: pink;
+}
+
+.petshop-model{
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.petshop-text {
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    background-color: hsla(180, 88%, 49%, 0.884);
+    position: absolute;
+    bottom: 0;
+}
+
+.icon-img {
+    width: 500px;
+    height: 120px;
+    object-fit: contain;
+}
+
+    </style>
+<body>
+
+    <!-- 情報を流す -->
+    <header class = "header">
+        <div class = "scroll">わんわん動物園情報</div>
+    </header>
+    
+    <!-- 矢印 -->
+    <!-- <div class="arrow">
+
+    </div> -->
+
+    <!-- 広告 -->
+        <div class="advertisement">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad1">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad2">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad3">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad4">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad5">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad6">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad7">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad8">
+            <img src = "assets/img/pinofamilly.jpg" class = "advertisement-img" id = "ad9">
+        </div>
+    <!-- 表示、選択欄 -->
+    <div class="bullet">
+        <div class="select" id = "sel1">・</div>
+        <div class="select" id = "sel2">・</div>
+        <div class="select" id = "sel3">・</div>
+        <div class="select" id = "sel4">・</div>
+        <div class="select" id = "sel5">・</div>
+        <div class="select" id = "sel6">・</div>
+        <div class="select" id = "sel7">・</div>
+        <div class="select" id = "sel8">・</div>
+        <div class="select" id = "sel9">・</div>
+    </div>
+
+    <!-- トリミング選択 -->
+    <div class="flex">
+        <div class="trimming">
+            <a href =  "#">
+                <div class = "trimming-text">トリミング情報</div>
+                <img src = "assets/img/trimming.jpg" class ="trimming-model">
+            </a>
+        </div>
+
+    <!-- トレーニング選択 -->
+        <div class="training">
+            <a href =  "#">
+                <div class = "training-text">トレーニング情報</div>
+                <img src = "assets/img/trimming.jpg" class ="training-model">
+            </a>
+        </div>
+
+    <!-- 病院選択 -->
+        <div class="hospital">
+            <a href =  "#">
+                <div class = "hospital-text">病院情報</div>
+                <img src = "assets/img/trimming.jpg" class ="hospital-model">
+            </a>
+        </div>
+
+    <!-- ペットショップ選択 -->
+        <div class="petshop">
+            <a href =  "#">
+                <div class = "petshop-text">ショップ情報</div>
+                <img src = "assets/img/trimming.jpg" class ="petshop-model">
+            </a>
+        </div>
+    </div>
+
+    <!-- 下のアイコン -->
+    <div class="icon">
+        <div class="home">
+            <a href = "home.html">
+                <img src = "assets/img/home.png" class = "icon-img">
+            </a>
+        </div>
+
+        <div class="home">
+            <a href = "home.html">
+                <img src = "assets/img/pen.jpg" class = "icon-img">
+            </a>
+        </div>
+
+        <div class="home">
+            <a href = "home.html">
+                <img src = "assets/img/memory.png" class = "icon-img">
+            </a>
+        </div>
+
+        <div class="home">
+            <a href = "home.html">
+                <img src = "assets/img/settei.png" class = "icon-img">
+            </a>
+        </div>
+    </div>
+    <script>
+        const container = document.querySelector('.advertisement');
+        const images = container.querySelectorAll('img');
+        let currentIndex = 0;
+    
+        function slideImages() {
+          // スライドを開始する
+        container.style.transition = 'transform 1s ease';
+        container.style.transform = `translateX(-${320 * (currentIndex + 1)}px)`; // 画像の幅（300px）を基にスライド
+    
+          // 5秒後にスライドを完了させる
+        setTimeout(() => {
+            // 画像がスライドした後に、左端にあった画像を右端に移動させる
+            currentIndex = (currentIndex + 1) % images.length; // インデックスを循環させる
+            container.style.transition = 'none'; // 一時的にアニメーションなしに設定
+            container.style.transform = `translateX(-${320 * currentIndex}px)`; // 次の画像に移動
+    
+            // 5秒後に次の画像のスライドができるように再度アニメーションを有効にする
+            setTimeout(() => {
+              container.style.transition = 'transform 1s ease'; // 再度アニメーションを有効にする
+            }, 0);
+          }, 5000); // 5秒後に次の処理
+        }
+    
+        // 初回のスライド開始
+        slideImages();
+        // 定期的に5秒ごとにスライドを繰り返す
+        setInterval(slideImages, 10000); // 10秒ごとにslideImagesを呼び出す（5秒待機 + 1秒でスライド + 5秒待機）
+    </script>
+</body>
+</html>

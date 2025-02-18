@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+body,html {
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    font-size:150%;
+    font-weight: bold;
+    padding: 2%;
+    background-color: bisque;
+}
+
+.scroll {
+    position: fixed;
+    top: 2%;
+    white-space: nowrap;
+    color: rgb(0, 100, 214);
+    animation: scroll 10s linear infinite;
+    height: 2%;
+
+}
+
+@keyframes scroll {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.advertisement-img {
+    width: 100%;
+    height: 51%;
+    margin-left: 2%;
+    border-radius: 5%;
+}
+
+.advertisement {
+    display: flex;
+    width: 100%;
+    height: 51%;
+    padding-top: 1%;
+    animation: advertisement 20s linear infinite;
+}
+
+@keyframes advertisement {
+    0% {
+        transform: translateX(0);
+    }
+    11.11% {
+        transform: translateX(-10%);
+    }
+    22.22% {
+        transform: translateX(-20%);
+    }
+    33.33% {
+        transform: translateX(-30%);
+    }
+    44.144% {
+        transform: translateX(-40%);
+    }
+    55.55% {
+        transform: translateX(-50%);
+    }
+    66.66% {
+        transform: translateX(-60%);
+    }
+    77.77% {
+        transform: translateX(-70%);
+    }
+    88.88% {
+        transform: translateX(-80%);
+    }
+    99.99% {
+        transform: translateX(-90%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.bullet {
+    position: relative;
+    text-align: center;
+    top: -22%;
+    color: gray;
+    animation: changeColor 5s ease in-out infinite;
+}
+
+@keyframes bullet {
+    0% {
+        color: black; 
+    }
+    11.11% {
+        color: red;
+    }
+    22.22% {
+        color: green;
+    }
+    33.33% {
+        color: yellow;
+    }
+    44.144% {
+        color: blue;
+    }
+    55.55% {
+        color: purple;
+    }
+    66.66% {
+        color: aqua;
+    }
+    77.77% {
+        color: pink;
+    }
+    88.88% {
+        color: brown;
+    }
+    99.99% {
+        color: white;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+.select {
+    display: inline-block;
+    align-items: center;
+    font-size: 200%
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: -10%;
+    margin-left: 15%;
+    height: 10%;
+}
+
+.trimming {
+    height: 40%;
+    width: 70%;
+    background-color: pink;
+}
+
+.trimming-model {
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.trimming-text {
+    text-align: center;
+}
+
+.training{
+    height: 40%;
+    width: 70%;
+    background-color: pink;
+}
+
+.training-model {
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.training-text {
+    text-align: center;
+}
+
+.hospital {
+    margin-top: -32%;
+    height: 90%;
+    width: 70%;
+    background-color: pink;
+}
+
+.hospital-model {
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.hospital-text {
+    text-align: center;
+}
+
+.petshop{
+    margin-top: -32%;
+    height: 90%;
+    width: 70%;
+    background-color: pink;
+}
+
+.petshop-model{
+    height: 65%;
+    width: 90%;
+    padding: 4%;
+}
+
+.petshop-text {
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    background-color: hsla(180, 88%, 49%, 0.884);
+    position: absolute;
+    bottom: 0;
+}
+
+.icon-img {
+    width: 25%;
+}
